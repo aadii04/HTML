@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Our HTML Lesson </title>
+    </head>
+
+<body>
+        Welcome everybody
+<br>
+            <label for="name" class="txtSize"> Enter name </label>
+            <input type="text" id="name" name="name" />
+            <br>
+            <br>
+            <br>
+   <label id="ResultPlate" text="" ></label>
+            <br>
+<br>
+<div class="class1">
+                Technical Skill set:<br>  
+                <input type="checkbox" id="html" name="html" value="html" />  
+                <label for="html"> HTML </label> <br>  
+                <input type="checkbox" id="cssprog" name="cssprog" value="CSS 3" />  
+                <label for="cssprog">CSS</label> <br>  
+                <input type="checkbox" id="javascript" name="javascript" value="JavaScript" /> 
+                <label for="javascript">JavaScript</label>  
+            </div>
+ 
+            <br>
+            <br>
+            <br>
+ 
+        <div>
+            <div>
+                <label for="acadqual">Highest Academic Qualification: </label>  
+                <input type="radio" id="acadqual" name="acadqual" value="Graduation"/>Graduation  
+                <input type="radio" id="acadqual" name="acadqual" value="PostGraduation"/>Post Graduation <br/>  
+            </div>
+ 
+            <br>
+            <br>
+ 
+            <div id="workmode">
+                <label for="workform">Prefered workmode: </label>  
+                <input type="radio" id="prekwork" name="prekwork" value="WorkFromHome"/>Work From Home  
+                <input type="radio" id="prekwork" name="prekwork" value="WorkInOffice"/>Work In Office <br/>  
+            </div>
+        </div>
+
+            <div>
+
+                <p> HTML is available across versions as  - HTML 1.0 2.0 3.0 3.2 4.01 XHTML 1.0 HTML5. We can design state-of-the-art web pages. </p>
+
+            </div>
+            <a href="http://www.google.com" > Google </a>
+            <br>
+            <a href="Example1.html" > Local Link </a>
+        <div>
+
+             Enter your Birth Month: Press any character<br />
+
+             <input type="text" id="birthMonth" list="BirthMonth">
+
+             <datalist id="BirthMonth">
+
+                 <option value="January">
+
+                 <option value="February">
+
+                 <option value="March">  
+
+                 <option value="April">  
+
+                 <option value="May">  
+
+                 <option value="June">  
+
+                 <option value="July">  
+
+                 <option value="August">  
+
+                 <option value="September">  
+
+                 <option value="October">  
+
+                 <option value="November">  
+
+                 <option value="December">
+
+             </datalist>
+
+        </div>
+  <table border ="1" width="50%">  
+                <tr  class="info">
+                    <th>Team</th>
+                    <th>Match Played</th>
+                    <th>Points</th>
+                </tr>  
+ 
+                <tr>
+                    <td>Team-North</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>  
+
+                <tr>
+                    <td>Team-East</td><td>4</td><td>8</td>
+                </tr>  
+ 
+                <tr>
+                    <td>Team-West</td><td>4</td><td>2</td>
+                </tr> 
+ 
+                <tr>
+                    <td>Team-South</td><td>3</td><td>2</td>
+                </tr>
+
+            </table> 
+<div class="container">
+    <form oninput="result.value = parseInt(first.value) + parseInt(second.value)">
+     <input name="first" type="number" value="0"> +
+     <input name="second" type="number" value="0"> = <output name="result" for="firstxx secondkk">0</output>
+    </form>
+</div>
+<div>
+   <p>Low: <meter value="20" min="0" max="100" low="25" high="75" optimum="100"></meter></p>
+   <p>Medium: <meter value="50" min="0" max="100" low="25" high="75" optimum="100"></meter></p>
+   <p>High: <meter value="80" min="0" max="100" low="25" high="75" optimum="100"></meter></p>
+</div>
+<div>
+    <p>Intermediate: <progress max="100"></progress></p>
+    <p>Progress 60%: <progress value="60" max="100"></progress></p>
+</div>
+
+<div>
+
+    <form>
+
+        <input type="text" id="given-name" name="given-name" placeholder="at least 3 characters" >
+
+        <input class="form-control" type="email"  required="" placeholder="username" oninvalid="this.setCustomValidity('Please Enter valid email')" oninput="setCustomValidity('')"></input>
+
+        <input type="submit" id="submit" name="submit" value="Save">
+
+    </form>
+
+</div>
+<img src="./images/nature.jpg" alt="Jim Corbett National Park" >  </img>
+
+
+
+
+
+    </body>
+</html>

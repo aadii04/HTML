@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+            <title> Our HTML Lesson - with JavaScript </title>
+    <link rel="stylesheet" href="./sstye.css">
+    <script src="./folder.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+        
+</head>     
+
+<body>
+    <!-- <label id="ResultPlate" text="">Results</label> <br>   
+    <script>            
+        function Welcome() {
+            var vName = "Espire";
+            alert('Welcome Everybody From ' + vName);
+        }
+        function compareNumbers(val1, val2) {
+            var str = "";
+            if (val1 > val2) {
+                str = "val1 is greater";
+            }
+            else if (val1 < val2) {
+                str = "val2 is greater";
+            }
+            else {
+                str = "both are equal";
+            }
+            alert(str);
+        }
+        function getGradesMessages(grade) {
+            var str = "";
+            switch (grade) {
+                case "A":
+                    str = "Excellent";
+                    break; case "B":
+                    str = "Very Good";
+                    break; case "C":
+                    str = "Good";
+                    break; default:
+                    str = "not known yet";
+            }
+            alert(str);
+        }
+        var num1 = 20;
+        var num2 = 30;
+        document.getElementById("ResultPlate").innerHTML = "Variable Example : " + (num1 + num2);
+        document.write("writing here: " + (num2 - num1) + "<br>");
+        if (num1 > num2) {
+            document.write("num1 is greater" + "<br>");
+        }
+        else if (num1 < num2) {
+            document.write("num2 is greater" + "<br>");
+        }
+        else {
+            document.write("both are equal" + "<br>");
+        }
+        var cnt;
+        document.write("Loop starts" + "<br />");
+        for (cnt = 0; cnt < 10; cnt++) {
+            document.write("cnt value is : " + cnt + "<br />");
+        }
+        document.write("Loop ends!" + "<br>");
+        var cnt = 0;
+        document.write("Loop starts" + "<br />");
+        while (cnt < 10) {
+            document.write("cnt value is : " + cnt + "<br />");
+            cnt++;
+        }
+
+        document.write("Loop ends!"+"<br>");
+        // Error Handling
+        function myErrorHandler() {
+            var a = 100;
+            try {
+                nonExistingMethod();
+                alert("Value of variable a is : " + a);
+            }
+            catch (e) {
+                alert("Error: " + e.description);
+            }
+            finally {
+                alert("Finally block will always execute!");
+            }
+        }
+        var fName = "Aditya";
+        var lName = "Singh";
+        document.write(fName + "" + lName+"<br>");
+        var arrFruits = [];
+        arrFruits[0] = "Mango";
+        arrFruits[1] = "Apple";
+        arrFruits[2] = "Banana";
+        arrFruits[3] = "Grape";
+        arrFruits[4] = "Guava";
+        var arrFruits = new Array("Mango", "Apple", "Banana", "Grape", "Guava");
+        var ln = arrFruits.length;
+        for (i = 0; i < ln; i++) document.write(arrFruits[i]);
+        arrFruits[5] = getGradesMessages("A");
+        var FruiteDesc = [];
+        FruiteDesc["Taste"] = "sweet";
+        FruiteDesc["Availability"] = "Round the year";
+        FruiteDesc["PriceperKG"] = 90;
+
+        arrFruits[arrFruits.length] = FruiteDesc;
+    //     var arrFruits = ["Mango", "Apple", "Banana", "Grape", "Guava"];
+    //     document.getElementById("ResultPlate").innerHTML = "My favourite fruit: " + arrFruits[0] + "<br>";
+    //     document.getElementById("ResultPlate").innerHTML = "My favourite fruits are : " + arrFruits.toString();
+    //      document.getElementById("ResultPlate").innerHTML = "My favourite fruits are : " + arrFruits.join("#");
+    //     document.getElementById("ResultPlate").innerHTML = "My favourite fruits are : " + arrFruits.toString() +  arrFruits.join(" # ");
+    //     var arrFruits = [];
+    //     arrFruits[0] = "Mango";
+    //     arrFruits[1] = "Apple";
+    //     arrFruits[2] = "Banana";
+    //     arrFruits[3] = "Grape";
+    //     arrFruits[4] = "Guava";
+    //     var arrFruits = new Array("Mango", "Apple", "Banana", "Grape", "Guava");
+    //     var ln = arrFruits.length;
+    // for (i = 0; i < ln; i++) document.write(arrFruits[i]);
+//     arrFruits.push("Strawberry");
+//     document.write(arrFruits.pop());
+//     var arrFruitsRev = arrFruits.reverse();
+// var strText = "This is a sample text to test ' String sa@123 '126 Sample methods in a Text String";
+// document.getElementById("ResultPlate").innerHTML = "Slice Example:" + " " + strText.slice(6, 16);
+// document.getElementById("ResultPlate").innerHTML = "Slice Example:" + " " + strText.slice(6, 16);
+// document.getElementById("ResultPlate").innerHTML = "Substring Example: " + strText.substring(20, 32);
+// document.getElementById("ResultPlate").innerHTML = "Substr Example: " + strText.substr(10, 6);
+// document.getElementById("ResultPlate").innerHTML = "IndexOf Example: " + strText.indexOf("text", 20);
+// document.getElementById("ResultPlate").innerHTML = "LastIndexOf Example: " + strText.lastIndexOf("text");
+// document.getElementById("ResultPlate").innerHTML = "Search Example: " + strText.search("text");
+// document.getElementById("ResultPlate").innerHTML = "Search Example - case-insensitive: " + strText.search(/Sample/i);
+// document.getElementById("ResultPlate").innerHTML = "Search Example - replace with new text: " + strText.replace(/Sample/ig, "General");
+// document.getElementById("ResultPlate").innerHTML = "Match Example : " + strText.match([a-c]); // i -> Case-insensitive, g-> global, m-> multiline matching
+//     const patrn = /[\^%#\']/g;
+
+//     document.getElementById("ResultPlate").innerHTML = "Pattern Example : " + patrn.test(strText);
+
+
+var book = {
+            genre:"scince fiction", 
+            mode:"electronic", 
+            type:"kindle",
+            purchaseModes : function() {
+            return this.mode + " " + this.type + "   " + " Online";    }
+        };
+ 
+//         function purchaseModes(objBook) {
+//                 alert(objBook.purchaseModes());
+//             return;
+//         }
+// function mathFunction(p1) {​​​​​   
+
+//         alert("Round; " + Math.round(p1) + "  " + "Ceil; " + Math.ceil(p1) + "  " + "Floor; " + Math.floor(p1) + "  "  + "Trunc; " + Math.trunc(p1));
+
+//       return;
+
+//     }​​​​​
+ </script> -->      
+    <!--  <input type="button" id="btnWelcome" name="btnWelcome" value="Welcome" onclick="Welcome()" />
+    <input type="button" id="btnCmpNum" name="btnCmpNum" value="Compare" onclick="compareNumbers(4, 3)">
+    <input type="button" id="btnGrades" name="btnGrades" value="Grade Messages" onclick="getGradesMessages('B')" />
+    <input type="button" id="btnHandleErrors" name="btnHandleErrors" value="Handle Errors"
+        onclick="myErrorHandler()" />
+        <button onclick="purchaseModes(book)">Get Purchase Info</button> <br> 
+        <button onclick="mathFunction(1234.56)">Get Maths</button>     -->
+    <script>
+        // function navFunction() {
+
+        //     alert("Name; " + navigator.appName + "  " + "Version " + navigator.appVersion + "  " + "cookie; " + navigator.cookieEnabled + "  " + "Agent; " + navigator.userAgent + "  " + "Language; " + navigator.language + "  " + "Product; " + navigator.product + "  " + "platform; " + navigator.platform);
+        //     return;
+        // }
+        // function winFunction() {
+
+        //     alert("Navigator; " + window.navigator + "  " + " Location:   " + window.location + "  " + " Screen:   " + window.screen + " " + " Width: " + window.innerWidth + " Height: " + window.innerHeight + " Name: " + window.name + " Opener: " + window.opener);
+        //     return;
+        // }
+        // function screenFunction() {
+
+        //     alert("Height; " + screen.height + "  " + "Available Height: " + screen.availHeight + "  " + "Width; " + screen.width + "  " + "Available : " + screen.availWidth + "  " + "Pixel Depth: " + screen.pixelDepth + "  " + "Color Depth: " + screen.colorDepth);
+        //     return;
+        // }
+        // function locationFunction() {
+
+        //     alert("Hostname; " + location.hostname + "  " + "href: " + location.href + "  " + "Origin; " + location.origin);
+        //     //location.replace("http://www.google.com");
+        //     return;
+        // }
+        // function historyFunction() {
+
+        //     alert("Length; " + history.length);
+        //     //location.replace("http://www.google.com");
+        //     return;
+        // }
+        // var navProp;
+        // document.write("Navigator Object Properties <br /> ");
+        // for (navProp in navigator) {
+        //     document.write(navProp);
+        //     document.write("<br />");
+        // }
+        // document.write("Finished writing Navigator Object Properties!");
+
+
+    </script>
+    <button onclick="navFunction" ()>Get Navigator Information</button>
+    <button onclick="winFunction()">Get Window Information</button>
+    <button onclick="screenFunction()">Get Screen Information</button>
+    <button onclick="locationFunction()">Get Location Information</button>
+    <button onclick="historyFunction()">Get History Information</button>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Our HTML Lesson </title>
+    </head>
+
+<body>
+        Welcome everybody
+<br>
+            <label for="name" class="txtSize"> Enter name </label>
+            <input type="text" id="name" name="name" />
+            <br>
+            <br>
+            <br>
+   <label id="ResultPlate" text="" ></label>
+            <br>
+<br>
+            <br>
+ 
+        <div>
+            <div>
+                <label for="acadqual">Highest Academic Qualification: </label>  
+                <input type="radio" id="acadqual" name="acadqual" value="Graduation"/>Graduation  
+                <input type="radio" id="acadqual" name="acadqual" value="PostGraduation"/>Post Graduation <br/>  
+            </div>
+ 
+            <br>
+            <br>
+ 
+            <div id="workmode">
+                <label for="workform">Prefered workmode: </label>  
+                <input type="radio" id="prekwork" name="prekwork" value="WorkFromHome"/>Work From Home  
+                <input type="radio" id="prekwork" name="prekwork" value="WorkInOffice"/>Work In Office <br/>  
+            </div>
+        </div>
+    </body>
+</html>
